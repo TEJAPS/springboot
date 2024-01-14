@@ -1,0 +1,36 @@
+Lambda expressions: write code in functional style.
+	concise way to implement SAM(single abstract method) interface using expression.
+	used to iterate, filter and extract data.
+	implement interface which has functional interface.
+	we dont define methods, we just write implementation code.
+	lambda expression is treater as function hence no .class file is created.
+	WHY? - less code.
+	SYNTAX - (argument-list) -> {body}
+	if paranthesis then return keyword is required, else not.
+	
+Functional interfaces: Interface which has only one abstrace method, using optional annotation @FunctionalInterface
+
+Method references: used to refer method of functional interface. Easy form of lambda expression. replace lambda expression with this.
+	types: ref to static method, to instance method, to constructor
+
+Stream API,
+Default methods,
+Base64 Encode Decode,
+Static methods in interface,
+Optional class,
+Collectors class,
+ForEach() method,
+Nashorn JavaScript Engine,
+Parallel Array Sorting,
+Type and Repating Annotations,
+IO Enhancements,
+Concurrency Enhancements,
+JDBC Enhancements etc.
+--------------------------------------------
+dependency scope:
+> compile - avail @ compile time and run time.
+> provided - avail @ compile time. Dependencies that are expected to be provided by runtime env, like tomcat. available at compile time but are not packaged with app jar. ex: servlet -api
+> runtime - avail @ only runtime. ex: hibernate core.
+> system - same as provided but exact path needs to be provided - tightly coupled with system configuration
+> import - used in dependencyManagement to control scope of dependencies brought in by transitive dependencies
+> test - 
