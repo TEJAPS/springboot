@@ -8,12 +8,23 @@ Lambda expressions: write code in functional style.
 	SYNTAX - (argument-list) -> {body}
 	if paranthesis then return keyword is required, else not.
 	
-Functional interfaces: Interface which has only one abstrace method, using optional annotation @FunctionalInterface
-
 Method references: used to refer method of functional interface. Easy form of lambda expression. replace lambda expression with this.
 	types: ref to static method, to instance method, to constructor
+	
+Functional interfaces: Interface which has only one abstrace method, using optional annotation @FunctionalInterface
+	can have any number of default, static methods but contains only one abstract method.
+	can declare methods of object class.
+	It can contain any number of Object class methods.  
+	Can extends another interface only when it does not have any abstract method.
+			======================IMPLEMENTATION DONE TILL HERE SO FAR======================
+Stream API: util package, consist of classes/interface/enum allowing functionaly style operations on elements.
+	does not store elements. simple conveys from source through pipeline of computational operations.
+	functional in nature meaning it does not modify source.
+	it is lazy and evaluates code only when required.
+	each element is visited only once during life of stream.
+	CONTINUE FROM REDUCE EXAMPLE - https://www.javatpoint.com/java-8-stream
 
-Stream API,
+
 Default methods,
 Base64 Encode Decode,
 Static methods in interface,
@@ -34,3 +45,4 @@ dependency scope:
 > system - same as provided but exact path needs to be provided - tightly coupled with system configuration
 > import - used in dependencyManagement to control scope of dependencies brought in by transitive dependencies
 > test - 
+--------------------------------------------
