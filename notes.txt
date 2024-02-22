@@ -22,15 +22,21 @@ Stream API: util package, consist of classes/interface/enum allowing functionaly
 	functional in nature meaning it does not modify source.
 	it is lazy and evaluates code only when required.
 	each element is visited only once during life of stream.
-	CONTINUE FROM REDUCE EXAMPLE - https://www.javatpoint.com/java-8-stream
+	Filter, reduce, map, iteration(foreach),collect, count,
 
+Base64 Encode Decode:(exchange of binary data over text based protocols)
+	Basic Encoding and Decoding: specified by RFC 4648 and RFC 2045. no line sep character.
+	URL and filename Encoding and Decoding: base64 alphabet specified by RFC 4648. no line seperator character
+	MIME: base64 alphabet specified in RFC 2045, max 76 chars, uses \r and \n for line seperator.
 
-Default methods,
-Base64 Encode Decode,
+Default methods: Non abstract methods which are defined inside interface and tagged with default.
+	Interface has all abstract methods, but if it wants to define body for some method, it will be using default, and the class implementing it has option to override the same default method again but not mandatory.
+	
+ForEach() method: start from here : https://www.javatpoint.com/java-8-foreach
+
 Static methods in interface,
 Optional class,
 Collectors class,
-ForEach() method,
 Nashorn JavaScript Engine,
 Parallel Array Sorting,
 Type and Repating Annotations,
@@ -46,3 +52,4 @@ dependency scope:
 > import - used in dependencyManagement to control scope of dependencies brought in by transitive dependencies
 > test - 
 --------------------------------------------
+rajnigandha complex, zoo
